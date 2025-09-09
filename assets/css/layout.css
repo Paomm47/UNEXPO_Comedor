@@ -1,0 +1,105 @@
+/* === LAYOUT.CSS === */
+/* Navbar superior */
+nav.navbar {
+    background-color: #002d5a !important;
+    color: white;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #0d47a1;
+    color: white;
+    transition: width 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+    overflow-x: hidden;
+}
+
+#sidebar.collapsed {
+    width: 60px;
+}
+
+/* Enlaces del sidebar */
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    height: 50px;
+    transition: background-color 0.2s;
+}
+
+#sidebar ul li a:hover {
+    background-color: #1565c0;
+}
+
+#sidebar ul li a i {
+    min-width: 25px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.link-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.2s ease, max-width 0.2s ease, margin-left 0.2s ease;
+    opacity: 1;
+    margin-left: 12px;
+    max-width: 160px;
+}
+
+#sidebar.collapsed .link-text {
+    opacity: 0;
+    max-width: 0;
+    margin-left: 0;
+    pointer-events: none;
+}
+
+/* Botón de colapsar sidebar */
+#btnToggleSidebar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+#btnToggleSidebar:hover {
+    background-color: #0b5ed7;
+}
+
+/* Fondo difuminado decorativo */
+.fondo-difuminado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(10px);
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+}

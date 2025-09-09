@@ -1,0 +1,168 @@
+/* ==== ESTILOS GENERALES ==== */
+
+/* Textos generales */
+h1, h2, h3, h4, h5, h6 {
+    color: #0d47a1;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #000000;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    color: #0d47a1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0b3c91;
+    text-decoration: underline;
+}
+
+/* ==== TABLAS ==== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.table th,
+.table td {
+    padding: 12px 16px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #0d47a1;
+    color: white;
+    font-weight: bold;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f5faff;
+}
+
+/* ==== TARJETAS GENERALES ==== */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+/* ==== ICONOS (ajuste general) ==== */
+.icon {
+    margin-right: 8px;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+/* ==== BADGES O ESTADOS ==== */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.badge-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* ==== BOTONES SECUNDARIOS ==== */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* ==== MENSAJES Y ALERTAS ==== */
+.alert {
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* ==== RESPONSIVE GENERAL ==== */
+@media (max-width: 768px) {
+    .form-container,
+    .card,
+    .table {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

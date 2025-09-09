@@ -1,0 +1,156 @@
+/* === stylelg.css para Login === */
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Fondo difuminado */
+.fondo-lg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Formulario */
+form {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+/* Logo */
+form img {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 1.5rem;
+}
+
+/* Título */
+form h2 {
+    color: #0d47a1;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs con íconos */
+.input-icon {
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.input-icon input {
+    width: 100%;
+    padding: 0.5rem 1.5rem 0.5rem 2.5rem;
+    border: 2px solid #0d47a1;
+    border-radius: 9px;
+    font-size: 1rem;
+    transition: border-color 3s;
+}
+
+.input-icon input:focus {
+    border-color: #0d47a1;
+    outline: none;
+}
+
+/* Checkbox mostrar contraseña */
+.checkbox-container {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #333;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.checkbox-container label {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Botón */
+button[type="submit"] {
+    width: 50%;
+    padding: 0.7rem;
+    background-color: #0d47a1;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0b3c91;
+}
+
+/* Estilo visual de error */
+.input-error {
+    border-color: red !important;
+}
+
+p.error {
+    color: red;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    form {
+        padding: 1.5rem;
+        width: 90%;
+    }
+}
