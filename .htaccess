@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /unexpo_comedor/
+
+# Evita redirigir si el archivo o directorio existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirige todo a index.php y pasa la ruta como parámetro 'view'
+RewriteRule ^([a-zA-Z0-9/_-]+)$ index.php?view=$1 [QSA,L]

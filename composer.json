@@ -1,0 +1,19 @@
+{
+  "name": "unexpo/comedor",
+  "description": "Sistema de gestión de comedor universitario",
+  "type": "project",
+  "authors": [
+    {
+      "name": "MYR"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\Controllers\\": "app/controllers/",
+      "App\\Models\\": "app/models/",
+      "Config\\": "config/"
+    }
+  },
+  "require": {}
+}
+

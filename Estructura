@@ -1,0 +1,128 @@
+/unexpo_comedor/                    ← Raíz del proyecto
+│
+├── index.php                      ← Punto de entrada principal
+├── .htaccess                      ← (Opcional) para URLs amigables
+├── composer.json
+├── composer.lock
+├── README.md                      ← (Opcional) Documentación
+│
+├── /vendor/                       ← Librerías autoload de Composer
+│   ├── /autoload.php
+│   ├── /composer/
+│   │   ├── autoload_classmap.php
+│   │   ├── autoload_namespaces.php
+│   │   ├── autoload_psr4.php
+│   │   ├── autoload_real.php
+│   │   ├── autoload_static.php
+│   │   ├── ClassLoader.php
+│   │   ├── installed.json
+│   │   ├── installed.php
+│   │   ├── installedVersions.php
+│   │   └── LICENSE 
+│
+├── /config/
+│   └── Connect.php               ← Clase de conexión PDO a la base de datos
+│
+├── /database/
+│   └── comedor_db.sql            ← Script SQL para crear y poblar la base de datos
+│
+├── /assets/
+│   ├── /css/
+│   │   ├── fonts.css  
+│   │   ├── forms.css   
+│   │   ├── layout.css 
+│   │   ├── simple-line-icons.min.css  
+│   │   ├── style.css  
+│   │   ├── tables.css             
+│   │   └── stylelg.css           
+│   │
+│   ├── /js/usuario.js
+│   │   ├── comensales.js
+│   │   ├── compras.js
+│   │   ├── home.js
+│   │   ├── inventario.js
+│   │   ├── login.js
+│   │   ├── menus.js
+│   │   ├── proveedores.js
+│   │   ├── recetas.js
+│   │   ├── tickets.js
+│   │   └── usuarios.js              
+│   │
+│   └── /img/
+│       ├── fondo.jpg               
+│       ├── lg.png              
+│       ├── hg.png                        
+│       ├── logo.png              
+│       ├── not-found.svg              
+│       └── profile-img.jpg           
+│
+├── /app/
+│   ├── /controllers/
+│   │   ├── comensalcontroller.php
+│   │   ├── compracontroller.php
+│   │   ├── homecontroller.php
+│   │   ├── inventariocontroller.php
+│   │   ├── logincontroller.php
+│   │   ├── menucontroller.php
+│   │   ├── proveedorcontroller.php
+│   │   ├── recetacontroller.php
+│   │   ├── ticketcontroller.php
+│   │   └── usuariocontroller.php
+│   │
+│   ├── /models/
+│   │   ├── comensalmodel.php
+│   │   ├── compramodel.php
+│   │   ├── homemodel.php
+│   │   ├── inventariomodel.php
+│   │   ├── loginmodel.php
+│   │   ├── menumodel.php
+│   │   ├── proveedormodel.php
+│   │   ├── recetamodel.php 
+│   │   ├── ticketmodel.php
+│   │   └── usuariomodel.php
+│   │
+│   └── /views/
+│       │
+│       ├── /auth/
+│       │   └── login.php         ← Vista del login (formulario HTML)
+│       │
+│       ├── /comensales/
+│       │   ├── comensalesview.php
+│       │   └── comensaledit.php
+│       │
+│       ├── /compras/
+│       │   ├── comprasview.php
+│       │   └── comprasedit.php
+│       │
+│       ├── /home/
+│       │   └── homeview.php
+│       │
+│       ├── /inventario/
+│       │   ├── inventarioview.php
+│       │   └── inventarioedit.php
+│       │
+│       ├── /layout/
+│       │   ├── header.php
+│       │   ├── sidebar.php
+│       │   └── footer.php
+│       │
+│       ├── /menus/
+│       │   ├── menusview.php
+│       │   └── menuedit.php
+│       │
+│       ├── /proveedores/
+│       │   ├── proveedoresview.php
+│       │   └── proveedoredit.php
+│       │
+│       ├── /recetas/
+│       │   ├── recetasview.php
+│       │   └── recetaedit.php
+│       │
+│       ├── /tickets/
+│       │   ├── ticketsview.php
+│       │   └── ticketedit.php
+│       │
+│       └── /usuarios/
+│           ├── usuariosview.php 
+│           └── usuarioedit.php
+│
